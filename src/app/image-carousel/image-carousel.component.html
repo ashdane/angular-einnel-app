@@ -1,0 +1,15 @@
+<br>
+<c-carousel  (itemChange)="onItemChange($event)" transition="slide" [interval]="2000" class="carousel" [dark]="true" [wrap]="false">
+    <c-carousel-inner>
+      <c-carousel-item *ngFor="let slide of slides; index as i;">
+        <div class="img-class">
+        <img
+          [src]="slide.src"
+          alt="{{slide.title}}"
+          class="d-block w-100"
+          loading="lazy"
+        />
+        </div>
+      </c-carousel-item>
+    </c-carousel-inner>
+</c-carousel>

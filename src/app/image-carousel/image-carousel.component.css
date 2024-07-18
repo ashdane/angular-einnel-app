@@ -1,0 +1,38 @@
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-class img{
+    border: 3px solid gray;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.indicators {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
+
+@media (max-width: 479px) {
+    .carousel img {
+        max-width: 100%; 
+        height: auto;
+    }
+    .img-class img{
+        border: 2px solid gray;
+        border-radius: 20px 20px 20px 20px;
+        max-width: 100%;
+    }
+    .img-class {
+        max-width: 100%;
+    }
+    .carousel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+    }
+}
+

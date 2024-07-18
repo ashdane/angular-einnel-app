@@ -1,0 +1,95 @@
+.example-card {
+    max-width: 230px;
+}
+.cards-placement {
+    display: flex;
+    align-items: normal;
+    justify-content: space-evenly;
+    margin-bottom: 10em;
+    overflow-x: auto; /* Add horizontal scrolling */
+    white-space: nowrap; /* Prevent cards from wrapping to the next line */
+    padding: 10px; /* Add some padding for better visibility */
+      
+}
+
+.learn-more {
+    margin-bottom: 0em;
+}
+
+.card img{
+    /* display: inline-block;  */
+    margin: 30px; 
+    width: 200px;
+    height: 400px;
+  }
+
+.card {
+    margin: 10px;
+}  
+
+.example-card-2 {
+    max-width: 230px;
+}
+
+.ecclesia-card {
+    margin: 10px;
+}
+.ecclesia-card img {
+    margin-left: 30px; 
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 400px;
+}
+
+.mdox-card {
+    margin: 10px;
+}
+
+.mdox-card img {
+    margin-left: 30px; 
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 130px;
+    width: 200px;
+    height: 400px;
+}
+
+::ng-deep .cards-placement {
+    overflow-y: auto;
+    height: 450px; /* Set a height value to enable scrolling */
+  }
+  
+  ::ng-deep .cards-placement::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::ng-deep .cards-placement::-webkit-scrollbar-thumb {
+    background-color: lightgray;
+    border-radius: 20px;
+  }
+  
+  ::ng-deep .cards-placement::-webkit-scrollbar-thumb:hover {
+    background-color: lightcyan;
+  }
+  
+  ::ng-deep .cards-placement::-webkit-scrollbar-track {
+    background-color: lightcyan;
+    border-radius: 10px;
+  }
+  
+  ::ng-deep .cards-placement::-webkit-scrollbar-track:hover {
+    background-color: lightgray;
+}
+  
+  
+@media (max-width: 479px) {
+    .cards-placement {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+}

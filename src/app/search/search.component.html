@@ -1,0 +1,19 @@
+<!-- <form class="example-form">
+    <input type="text"
+           placeholder="Search"
+           [formControl]="control"
+           [matAutocomplete]="auto"
+           class="example-input">
+    <mat-autocomplete #auto="matAutocomplete">
+      @for (street of filteredStreets | async; track street) {
+        <mat-option [value]="street">{{street}}</mat-option>
+      }
+    </mat-autocomplete>
+  </form> -->
+
+  <form action="" class="search-bar">
+    <input type="search" name="search" pattern=".*\S.*" required>
+    <button class="search-btn" type="submit">
+      <span>Search</span>
+    </button>
+  </form>
